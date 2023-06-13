@@ -25,7 +25,8 @@ form textarea {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
-  border: 2px solid rgb(220,220,220);
+  border: 2px solid #eec1dc;
+  background-color: #eec1dc;
   outline: none;
   font-family: inherit;
   font-size: 0.9rem;
@@ -33,7 +34,8 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-  border-color: teal;
+  border-color: #eec1dc;
+  background-color: #eec1dc;
 }
 
 textarea {
@@ -43,12 +45,12 @@ textarea {
 form label {
   margin-top: 1rem;
   display: block;
-  color: #6C7A89;
+  color: black;
   font-weight: bold;
 }
 
 form button {
-  background-color:#6C7A89;
+  background-color: black;
   color: white;
   border: none;
   padding: 0.5rem 2rem;
