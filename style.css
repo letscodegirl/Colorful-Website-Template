@@ -16,6 +16,10 @@ h4 {
     margin-bottom: 25px;
 }
 
+input {
+    outline: none;
+}
+
 footer a {
     display: block;
     font-size: 14px;
