@@ -19,7 +19,7 @@
 <body>
 
     <!------------------- Header Section -------------------->
-    <header class="flex justify-center items-center min-h-screen bg-cover bg-top text-white">
+    <header class="flex justify-center items-center min-h-screen bg-cover bg-top text-white relative">
         <nav class="absolute top-4 left-4 uppercase font-light mx-10">
             <a class="mx-8 text-md" href="#"> Logo </a>
             <a class="mx-5 text-sm self-center" href="#"> Nav 1 </a>
@@ -101,13 +101,15 @@
 
 
     <!--------------------- Contact Form ---------------------->
-    <section class="bg-[#FE953D]">
-        <div class="grid grid-cols-2">
-            <h2 class="uppercase text-black font-bold text-xl my-5 text-black p-10"> Contact us</h2>
-            <p class="mb-5"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus corporis excepturi nisi a quas fugiat culpa ducimus quo iusto aperiam eius unde, laudantium, voluptas architecto recusandae, eos error rerum sequi. </p> 
-        </div>
-        <div class="grid grid-cols-2">
-            <form class="pl-10">
+    <section class="bg-[#FE953D] relative">
+        <svg class="absolute top-[-2%] left-0 w-full rotate-360" xmlns="http://www.w3.org/2000/svg" width="1440" height="111" viewBox="0 0 1440 111" fill="none">
+            <path d="M1816 31.6148C1724.67 31.6148 1724.67 111 1633.31 111C1541.96 111 1541.98 31.6148 1450.63 31.6148C1359.27 31.6148 1359.29 111 1267.96 111C1176.63 111 1176.63 31.6148 1085.29 31.6148C993.959 31.6148 993.959 111 902.626 111C811.293 111 811.293 31.6148 719.959 31.6148C628.626 31.6148 628.626 111 537.293 111C445.959 111 445.959 31.6148 354.626 31.6148C263.293 31.6148 263.293 111 171.959 111C80.6261 111 80.6261 31.6148 -10.7072 31.6148C-102.041 31.6148 -102.041 111 -193.354 111C-284.667 111 -284.667 31.6148 -376 31.6148V0H720H1816V31.6148Z" fill="#eec1dc"/>
+        </svg>
+        <div class="grid grid-cols-2 py-[10vw]">
+            <h2 class="uppercase text-black font-bold text-xl my-5 text-black"> Contact us</h2>
+            <div></div>
+            <p class="mb-5 p-10 self-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus corporis excepturi nisi a quas fugiat culpa ducimus quo iusto aperiam eius unde, laudantium, voluptas architecto recusandae, eos error rerum sequi. </p> 
+            <form class="pl-10 col-start-2 self-center">
                 <label class="text-black uppercase rounded-r-md rounded-l-md" for="_name"> Name </label>
                 <input type="text" name="_name" id="_name" />
                 <label class="text-black uppercase rounded-r-3xl rounded-l-3xl" for="_replyto"> Email </label>
@@ -116,40 +118,43 @@
                 <textarea name="message" id="message" ></textarea>
                 <button class="uppercase font-light rounded-r-3xl rounded-l-3xl px-7 py-1 bg-[#000000] text-white block mt-5" type="submit"> SUBMIT </button>
             </form> 
-        </div>
-    </section>
-
-
-    <!--------------------- Footer -------------------------->
-<footer class=" bg-[#eec1dc] pb-10 px-10">
-    <div class="grid grid-cols-5 gap-5 max-w-screen mx-auto w-[1157px]">
             
-        <div>
-            <h4> Lorem Ipsum</h4>
-            <a href="#"> Link 1 </a>
-            <a href="#"> Link 2 </a>
-            <a href="#"> Link 3 </a>
-            <a href="#"> Link 4 </a>
         </div>
-        <div>
-            <h4> Lorem Ipsum</h4>
-            <a href="#"> Link 1 </a>
-            <a href="#"> Link 2 </a>
-            <a href="#"> Link 3 </a>
-            <a href="#"> Link 4 </a>
-        </div>
-        <div>
-            <h4> Lorem Ipsum</h4>
-            <a href="#"> Link 1 </a>
-            <a href="#"> Link 2 </a>
-            <a href="#"> Link 3 </a>
-            <a href="#"> Link 4 </a>
-        </div>
-        <div class="col-span-2">
-            <h4> Subscribe to our newsletter</h4>
-            <input class="bg-[#FE953D] border-red rounded-r-full rounded-l-full px-7 py-1 " type="email">
-            <button class="uppercase font-light rounded-r-3xl rounded-l-3xl px-7 py-1 bg-[#000000] text-white block mt-5">Subscribe</button>
-        </div>
+        <svg class="absolute bottom-[-2%] left-0 w-full rotate-180" xmlns="http://www.w3.org/2000/svg" width="1440" height="111" viewBox="0 0 1440 111" fill="none">
+            <path d="M1816 31.6148C1724.67 31.6148 1724.67 111 1633.31 111C1541.96 111 1541.98 31.6148 1450.63 31.6148C1359.27 31.6148 1359.29 111 1267.96 111C1176.63 111 1176.63 31.6148 1085.29 31.6148C993.959 31.6148 993.959 111 902.626 111C811.293 111 811.293 31.6148 719.959 31.6148C628.626 31.6148 628.626 111 537.293 111C445.959 111 445.959 31.6148 354.626 31.6148C263.293 31.6148 263.293 111 171.959 111C80.6261 111 80.6261 31.6148 -10.7072 31.6148C-102.041 31.6148 -102.041 111 -193.354 111C-284.667 111 -284.667 31.6148 -376 31.6148V0H720H1816V31.6148Z" fill="#eec1dc"/>
+        </svg>
+    </section>
+    
+    <!--------------------- Footer -------------------------->
+    <footer class=" bg-[#eec1dc] pb-10 px-10">
+        <div class="grid grid-cols-5 gap-5 max-w-screen mx-auto w-[1157px]">
+            
+            <div>
+                <h4> Lorem Ipsum</h4>
+                <a href="#"> Link 1 </a>
+                <a href="#"> Link 2 </a>
+                <a href="#"> Link 3 </a>
+                <a href="#"> Link 4 </a>
+            </div>
+            <div>
+                <h4> Lorem Ipsum</h4>
+                <a href="#"> Link 1 </a>
+                <a href="#"> Link 2 </a>
+                <a href="#"> Link 3 </a>
+                <a href="#"> Link 4 </a>
+            </div>
+            <div>
+                <h4> Lorem Ipsum</h4>
+                <a href="#"> Link 1 </a>
+                <a href="#"> Link 2 </a>
+                <a href="#"> Link 3 </a>
+                <a href="#"> Link 4 </a>
+            </div>
+            <div class="col-span-2">
+                <h4> Subscribe to our newsletter</h4>
+                <input class="bg-[#FE953D] border-red rounded-r-full rounded-l-full px-7 py-1 " type="email">
+                <button class="uppercase font-light rounded-r-3xl rounded-l-3xl px-7 py-1 bg-[#000000] text-white block mt-5">Subscribe</button>
+            </div>
 
     </div>
 </footer>
